@@ -6,37 +6,14 @@ function DessinerSegmentCourbe(x1,y1,x2,y2,x3,y3)
 
 [a,b,c] = EquationParabole(x1,y1,x2,y2,x3,y3);
 
-if(x1>x2)
-    pDepartX=x2;
-    pFinX=x1;
-else
-    pDepartX=x1;
-    pFinX=x2;
-end
+pMilieuX=x2;
+pFinX=x3;
 
-if(x3>pFinX)
-    pFinX=x3;
-elseif(x3<pDepartX)
-    pDepartX=x3;
-end
+ii=pMilieuX;
 
-ii=pFinX;
-pente=2*a*ii+b;
-if(pente>0)
-    estPositif=true;
-else
-    estPositif=false;
-end
-aChange=estPositif;
-while(aChange==estPositif&&ii>=pDepartX)
+while(ii<=pFinX)
     voltage=a*ii^2+b*ii+c;
     AfficherDonnee(ii,voltage);
-    ii=ii-0.0001;
-    pente=2*a*ii+b;
-    if(pente>0)
-        estPositif=true;
-    else
-        estPositif=false;
-    end
+    ii=ii+0.0001;
 end
 end
