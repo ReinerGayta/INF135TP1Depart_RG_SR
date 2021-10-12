@@ -12,27 +12,30 @@ ChargerSignal();
 xMax = ObtenirTempsMaximal();
 
 %On fait appel au tableau contenant toutes les valeurs de temps evaluees
-global tempsECG  ;
 
 %On intialise une valeur pour dénombrer le nombre de mesures prises
 nbMesures=0;
 
+temps=0;
+voltage=0;
+
 prochainTemps=0;
 prochainVoltage=0;
-%On passe à travers toutes les valeurs de x qui doivent être affichées
-for ii = 1:numel(tempsECG)
+
     %On vérifie que le temps de la valeur à afficher est inférieur  au
     %temps maximal récupéré
     while(tempsECG(ii)<= xMax)
         if(modeTracage == 1)
             AfficherDonnee(prochainTemps,prochainVoltage);
         end
-        if(modeTracage==2&&nbMesures>=2)
+        if( modeTracage==2 && nbMesures>=2 )
             DessinerSegmentDroite(temps,voltage,prochainTemps,prochainVoltage);
         end
         if(modeTracage==3&&nbMesures>=3)
-            
+            DessinerSegmentCourbe(tempsPasse,voltagePasse,temps,voltage,prochainTemps,prochainVoltage);
         end
+        tempsPasse=temps;
+        voltagePasse=voltage;
         temps=prochainTemps;
         voltage=prochainVoltage;
         %On obtient les valeurs de la prochaine mesure
