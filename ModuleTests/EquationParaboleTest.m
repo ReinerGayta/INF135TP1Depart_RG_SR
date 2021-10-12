@@ -13,7 +13,7 @@ fprintf('Test 1: {1,3},{2,7} et {3,13}\n attendue:[1,1,1]\n obtenue:[%.0f,%.0f,%
 
 %Trois variable qui prennent les valeurs de sorties de la fonction
 %EquationParabole avec des valeurs en entrees
-[x2,y2,z2] = EquationParabole(0.75,1.33,1.25,4.25,1.75,1.33);
+[x2,y2,z2] = EquationParabole(1.75,1.33,1.25,4.25,0.75,1.33);
 
 %On affiche les valeurs attendue avec les valeurs obtenue
 fprintf('Test 2: {0.75,1.33},{1.25,4.25} et {1.75,1.33}\n attendue:[-11.68,29.2,-14]\n obtenue:[%.2f,%.1f,%.0f]\n',x2,y2,z2);
