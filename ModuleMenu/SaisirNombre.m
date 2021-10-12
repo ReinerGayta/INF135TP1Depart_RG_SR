@@ -6,7 +6,7 @@ function nb = SaisirNombre(question,min,max)
     %par l'utilisateur. Elle prend un string contenant une question et les
     %deux valeurs limites de l'intervalle de la question. Elle retourne une
     %valeur valide entree par l'utilisateur ou -999 si l'utilisateur a
-    %decide de verfi
+    %decide de verfié
     
     %On initialise un boolean qui indique si la valeur entree par 
     %l'utilisateur est valide
