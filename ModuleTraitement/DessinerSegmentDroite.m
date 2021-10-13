@@ -1,6 +1,6 @@
 function DessinerSegmentDroite(x1,y1,x2,y2)
     %Auteur: Gayta, Reiner Luis et Rey, Santiago
-    %Date: 07-10-2021 
+    %Date: 2021-10-07
     %
     %Paramètres: les valeurs x et y des deux points
     %

@@ -1,6 +1,7 @@
-%
-%   Ce script permet d'inclure le répertoire de chaque module du projet courant dans le 
-%   répertoire de travail de Matlab.
+%Auteur: Gayta, Reiner Luis et Rey, Santiago
+%Date: 2021-09-30
+%Description: Ce script permet d'inclure le répertoire de chaque module du projet courant dans le
+%répertoire de travail de Matlab.
 %
 
 % On nettoie l'environnement de Matlab.

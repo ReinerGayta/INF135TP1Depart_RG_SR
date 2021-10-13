@@ -1,8 +1,9 @@
 function [a,b,c] = EquationParabole(x1,y1,x2,y2,x3,y3)
     %Auteur: Gayta, Reiner Luis et Rey, Santiago
-    %Date: 12-10-2021
+    %Date: 2021-10-12
     %
     %Paramètres: Les valeurs x et y de trois points
+    %
     %Description: fonction qui recois les valeurs x et y de trois points
     %et retourne la valeur des coefficients caracteristique de l'equation parabolique des trois
     %points
