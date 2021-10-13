@@ -1,10 +1,11 @@
-%Auteur:
-%Date:
-%
-%Description: Fonction qui affiche un menu pour permettre àl'utilisateur de
-%configurer l'axe verticale, l'axe horizontale ou le mode de traçage
+
 
 function AfficherMenuECG()
+    %Auteur:
+    %Date:
+    %
+    %Description: Fonction qui affiche un menu pour permettre àl'utilisateur de
+    %configurer l'axe verticale, l'axe horizontale ou le mode de traçage
     
     %On affiche les 3 options que peut choisir l'utilisateur
     fprintf('Que voulez-vous configurer?\n');

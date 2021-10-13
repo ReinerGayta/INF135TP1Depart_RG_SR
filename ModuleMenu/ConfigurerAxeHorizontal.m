@@ -10,7 +10,7 @@ function ConfigurerAxeHorizontal()
 Constantes();
  
  %Evaluation du nombre saisi pour tmax pour qu'il soit bien
- %dans l''intervalle voulu
+ %dans l'intervalle voulu
  tmax = SaisirNombre('Quelle sera le temps maximale affiche?\n',0.01,5);
  
  %On verifie que la valeur entrée soit différente de -999
