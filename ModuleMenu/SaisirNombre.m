@@ -1,7 +1,10 @@
 function nb = SaisirNombre(question,min,max)
     %Auteur: Gayta, Reiner Luis et Rey, Santiago
     %Date: 04-10-2021 
-    %
+    
+    %Parametre: 
+    %Retour:
+    
     %Cette fonction gere la saisie et la validation des valeurs entrees
     %par l'utilisateur. Elle prend un string contenant une question et les
     %deux valeurs limites de l'intervalle de la question. Elle retourne une

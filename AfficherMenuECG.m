@@ -6,6 +6,7 @@ function AfficherMenuECG()
     %configurer l'axe verticale, l'axe horizontale ou le mode de traçage
 
     %On demande à l'utilisateur de choisir qu'elle option à configurer
+
     fprintf('Que voulez-vous configurer?\n');
     fprintf('1 - configurer l''axe verticale\n');
     fprintf('2 - configurer l''axe horizontale\n');
