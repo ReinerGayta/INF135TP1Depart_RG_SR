@@ -10,21 +10,14 @@ function ConfigurerModeAffichage()
     fprintf('2 - Donnees + interpollation lineaire\n');
     fprintf('3 - Donnees + interpollation quadratique\n');
 
-    %On utilise la fonction SaisirNombre pour demander l'utilisateur quel mode
-    %il ou elle voudrait choisir et pour valider leur choix
+    %On demande à l'utilisateur de choisir un mode d'affichage et configure
+    %le graphe selon son choix
+
     choix = SaisirNombre("Comment voulez vous afficher le battement?",1,3);
 
-    %On verfie si l'utilisateur n'a pas annule l'operation
     if(choix~=-999)
-
-        %Si l'operation n'est pas annule, on appel ConfigurerMode() pour
-        %configurer le graphe
         ConfigurerMode(choix);
 
-        %pour tester
-        %fprintf('obtenu: %.0f', choix);
-        %else
-        %fprintf('obtenu: Annuler');
     end
 end
 
