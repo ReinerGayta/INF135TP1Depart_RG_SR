@@ -1,6 +1,6 @@
 function AfficherMenuECG()
     %Auteur: Gayta, Reiner Luis et Rey, Santiago
-    %Date:2021-09-30
+    %Date: 30-09-2021
     %
     %Description: Fonction qui affiche un menu pour permettre à l'utilisateur de
     %configurer l'axe verticale, l'axe horizontale ou le mode de traçage
@@ -14,8 +14,7 @@ function AfficherMenuECG()
    
     choix=SaisirNombre('Entrez votre choix ',1,3);
     
-    %On vérifie si la valeur donnée est entière et on redemande la question
-    %si cela n'est pas le cas
+    %On vérifie si la valeur entrée est entière
     while(choix~=fix(choix))
         choix = SaisirNombre('Valeur non entière, veuillez rentrer une valeur entière ',1,3);
     end

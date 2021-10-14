@@ -1,6 +1,6 @@
 function origine = OrdonneeDroite(x1,y1,m)
     %Auteur: Gayta, Reiner Luis et Rey, Santiago
-    %Date: 2021-10-07
+    %Date: 07-10-2021
     %
     %Paramètres: Les valeurs x et y d'un point sur une droite et la pente 
     %de cette droite
@@ -12,5 +12,6 @@ function origine = OrdonneeDroite(x1,y1,m)
     
     %Calcul de l'ordonné à l'origine
     origine = y1 - x1*m;
-
+    return
+    
 end

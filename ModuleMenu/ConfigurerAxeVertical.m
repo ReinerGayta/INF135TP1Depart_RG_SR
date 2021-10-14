@@ -5,10 +5,11 @@ function ConfigurerAxeVertical()
     %Cette fonction permet l'utilisateur de modifier la valeur maximum et
     %minimum de l'axe vertical
 
+    %Fait appel au constants
     Constantes();
 
-    %On demande à l'utilisateur d'entrer des valeurs maximums et minimums
-    %pour l'axe verticale et on le configure selon ce qu'il a entré
+    %On demande à l'utilisateur d'entrer les valeurs maximum et minimum
+    %pour l'axe verticale et on configure le graphe selon ce qu'il a entré
     vMax = SaisirNombre("Quelle sera le voltage maximal affichee?",-1.5,1.5);
 
     if(vMax~=-999)
