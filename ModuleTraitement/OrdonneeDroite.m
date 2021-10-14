@@ -10,6 +10,7 @@ function origine = OrdonneeDroite(x1,y1,m)
     %Descripion:Ce sous-programme a pour but d'ameliorer
     %l'affichage du signal ECG en calculant l'ordonnee d'une droite
     
+    %Calcul de l'ordonné à l'origine
     origine = y1 - x1*m;
 
 end
