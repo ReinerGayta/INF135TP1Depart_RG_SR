@@ -16,5 +16,7 @@ function ApplicationECG()
     modeTracage = ObtenirMode();
     
     %On traite le signal
-    TraiterSignal(modeTracage);
+    if(~ismissing(modeTracage))
+        TraiterSignal(modeTracage);
+    end
 end
