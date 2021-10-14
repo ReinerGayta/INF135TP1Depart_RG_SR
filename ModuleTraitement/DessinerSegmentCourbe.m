@@ -7,6 +7,7 @@ function DessinerSegmentCourbe(x1,y1,x2,y2,x3,y3)
     %Description: Cette fonction calcul une parabole entre trois points et trace la parabole
     %entre le deuxième point et le dernier point
     
+    %Calculs des coefficients caracteristiques pour l'équation de la parabole
     [a,b,c] = EquationParabole(x1,y1,x2,y2,x3,y3);
     
     pMilieuX=x2;
